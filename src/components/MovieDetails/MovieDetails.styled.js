@@ -4,7 +4,6 @@ import {
   accentBgColor,
   accentTextColor,
   mainHoverEfect,
-  mainTextColor,
   secondBgColor,
   secondTextColor,
 } from "utilities/variables/css";
@@ -157,8 +156,5 @@ export const NavigationsItem = styled.li`
 
 export const CustomLink = styled(NavLink)`
   font-size: 18px;
-  color: ${mainTextColor};
-  &.active {
-    color: ${accentTextColor};
-  }
+  color: ${accentTextColor};
 `;

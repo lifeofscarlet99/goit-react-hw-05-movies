@@ -61,10 +61,9 @@ function MovieDetails({ movieInfo }) {
             <ReleaseDate>{releaseDate}</ReleaseDate>
           </TitleWrapper>
           <GenresList>
-            {genres &&
-              genres.map(({ name, id }) => (
-                <GenresItem key={id}>{name}</GenresItem>
-              ))}
+            {genres?.map(({ name, id }) => (
+              <GenresItem key={id}>{name}</GenresItem>
+            ))}
           </GenresList>
           <Description>{description}</Description>
           <VoteWrapper>
